@@ -52,7 +52,7 @@ nav.sidebar__navigation{
 }
 .sidebar__libary{
     padding: 4px 8px;
-    width: 300px;
+    width: 270px;
     color: var(--color1);
     background-color: var(--back2);
     display: flex;
@@ -150,7 +150,7 @@ nav.sidebar__navigation{
     cursor: pointer;
 }
 .section-playlist__content .section-playlist__button:hover{
-    background-color: var(--back1);
+    transform: scale(1.04);
     transition: 0.3s;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
 }
