@@ -2,21 +2,10 @@ const resultArtist = document.getElementById("result-artist");
 const playlistContainer = document.getElementById("result-playlists");
 const searchInput = document.getElementById("search-input");
 
-/*function requestApi(searchTerm) {
+function requestApi(searchTerm) {
   fetch(`http://localhost:3000/artists?name_like=${searchTerm}`)
     .then((response) => response.json())
     .then((results) => displayResults(results));
-}*/
-function requestApi(searchTerm) {
-  fetch(`http://localhost:3000/artists?name_like=${searchTerm}`)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error(`Network response was not ok: ${response.status}`);
-      }
-      return response.json();
-    })
-    .then((results) => displayResults(results))
-    .catch((error) => console.error('Error during fetch:', error));
 }
 
 function displayResults(results) {
